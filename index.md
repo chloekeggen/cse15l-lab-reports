@@ -6,7 +6,7 @@ Thank you for checking out my first lab report!
 
 # This is the first file I created. 
 
-[Link] (https://youtu.be/8xngHLBEXnE)
+[Link] (https://kids.britannica.com/kids/article/cat/352924#:~:text=The%20domestic%20cat%2C%20or%20house%20cat%2C%20is%20a,name%20of%20the%20domestic%20cat%20is%20Felis%20catus.))
 
 > "Have a good day" - Me
 
