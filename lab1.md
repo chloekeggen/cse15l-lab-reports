@@ -21,11 +21,14 @@ When finished downloading, open VS Code. In order to connect to remote servers, 
 ![Image](Git Download Instructions.PNG)
 
 **1. Download the latest version, and once downloaded, open VS Code and create a new terminal at the top. Now, open the command palette using `CTRL` + `Shift` + `P` .**
+
 **2. Type "Select Default Profile"**
+
 **3. Select "Git Bash"**
+
 **4. Click on the + icon in the terminal window.**
 
-**Now Git Bash should be set up as the default terminal!
+**Now Git Bash should be set up as the default terminal!**
 
 # Connect to remote server 
 ![Image](SSH Log In Instructions.PNG)
