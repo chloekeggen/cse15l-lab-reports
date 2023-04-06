@@ -52,5 +52,6 @@ pwd
 mkdir
 cp
 ```
+![Image](TestCommands.PNG)
 
-** You are good to go! Have fun accessing your server!
+**You are good to go! Have fun accessing your server!
