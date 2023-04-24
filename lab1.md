@@ -30,7 +30,7 @@ When finished downloading, open VS Code. In order to connect to remote servers, 
 **Now Git Bash should be set up as the default terminal!**
 
 # Connect to remote server 
-![Image](SSH Log In Instructions.PNG)
+![Image](ssh instructions.PNG)
 
 Type in 
 ```
