@@ -16,7 +16,7 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
 
 ## Below is my code in action on a web browser!
 
-![Image](Server.PNG)
+![Image](ServerPrint.PNG)
 
 - The handleRequest method takes in my url as a parameter. If the url contains "```/add-message```" as its path, it finds the query and splits it at the "=" sign. It holds these values in a variable called "parameters". If the first part of the parameters equals to "s" (which stands for string), it will concatenate our inputted string to the variable ```string```.
   - The main method creates the server itself, so when running the terminal, it requires a port number. If no port number is given, it will throw an exception. Here, our port number is ```3902``` as you can see in our url.
