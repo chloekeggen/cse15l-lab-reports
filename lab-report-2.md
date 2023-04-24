@@ -19,7 +19,7 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
 ![Image](Server.PNG)
 
 - The handleRequest method takes in my url as a parameter. If the url contains "```/add-message```" as its path, it finds the query and splits it at the "=" sign. It holds these values in a variable called "parameters". If the first part of the parameters equals to "s" (which stands for string), it will concatenate our inputted string to the variable ```string```.
--   The main method creates the server itself, so when running the terminal, it requires a port number. If no port number is given, it will throw an exception. 
+  - The main method creates the server itself, so when running the terminal, it requires a port number. If no port number is given, it will throw an exception. Here, our port number is ```3902``` as you can see in our url.
 - The relevant arguments to the handleRequest method is a valid url that contains "```/add-message```" as its path, and contains a query ```?s=```. The url also must contain a port number between ```1024 to 49151```. 
 - Any inputted values, whether an int, double, or a character will be changed into a String. An example of this is below:
 
