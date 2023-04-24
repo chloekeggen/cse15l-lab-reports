@@ -32,7 +32,45 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
 
 # Part 2: Bugs
 
+## 1. Failure-inducing input
+```
+@Test
+  public void testReversedLonger() {
+    int[] input1 = {3, 4, 5};
+    assertArrayEquals(new int[]{5, 4, 3 }, ArrayExamples.reversed(input1));
+  }
+ ```
 
+## 2. Input that doesn't induce failure
+```
+  @Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+3. Symptom: Output of running the tests
+ - The output when we try inputting the ```{3, 4, 5}```
+![Image](BugReport.PNG)
+ - The output when we try inputting the ```{ } ```
+![Image](WorkingTest1.PNG)
+
+## 4. The fix
+
+Before: 
+
+
+After: 
+```
+ static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    arr = newArray;
+    return arr;
+  }
+ ```
 
 # Part 3: What I learned!
 
