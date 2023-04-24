@@ -40,6 +40,7 @@ ssh cs15lsp23abc@ieng6.ucsd.edu
 
 It will now ask for your password, so type in the one that you created [here](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit)
 
+
 Now you should be connected to the remote server, and it should resemble the image above! 
 
 Try out some commands in your terminal to check what it does:
@@ -48,7 +49,8 @@ cd  : "change directory", use when you want to enter into a directory!
 cd ~ : when you want to enter the home directory
 ls -lat : lists files and directories 
 ls -a
-ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
+ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, 
+            where the abc is one of the other group members’ username
 cat /home/linux/ieng6/cs15lsp23/public/hello.txt : concatenates files and prints contents
 ```
 
