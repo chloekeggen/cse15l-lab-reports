@@ -17,7 +17,7 @@ Go to this [website](https://code.visualstudio.com/) and download the latest VS 
 # Setting up environment
 
 When finished downloading, open VS Code. In order to connect to remote servers, we need to use [Git](https://git-scm.com/downloads) 
-![Image](Git Download Instructions.PNG)
+![Image](Capture.PNG)
 
 **1. Download the latest version, and once downloaded, open VS Code and create a new terminal at the top. Now, open the command palette using `CTRL` + `Shift` + `P` .**
 
