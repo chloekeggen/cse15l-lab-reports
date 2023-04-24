@@ -49,7 +49,7 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
-3. Symptom: Output of running the tests
+## 3. Symptom: Output of running the tests
  - The output when we try inputting the ```{3, 4, 5}```
 ![Image](BugReport.PNG)
  - The output when we try inputting the ```{ } ```
