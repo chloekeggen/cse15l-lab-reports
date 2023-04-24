@@ -4,17 +4,17 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
 
 # Part 1: Writing a web server
 
-Below is the code for my String Server: 
+## Below is the code for my String Server: 
 
 ![Image](CodeServer1.PNG)
 
-- This is the code that tells our server what we want to happen. If the path of my url is "add-message", it will add the string I write in the next line. 
+  -  This is the code that tells our server what we want to happen. If the path of my url is "add-message", it will add the string I write in the next line. 
 
 ![Image](CodeServer2.PNG)
 
-- This is the code that sets up the port for our server so you can access it on the web browser. 
+  - This is the code that sets up the port for our server so you can access it on the web browser. 
 
-
+## Below is my code in action on a web browser!
 
 ![Image](Server.PNG)
 
