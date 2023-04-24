@@ -29,3 +29,11 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
   - The main method, again, is called, and it needs a valid port number in order to create the server. 
 - The relevant arguments are the url with the required path and query, and if these are not given correctly, the code returns a ```404 Not Found!``` error to let the user know. 
 - Here, we can see clearly that the integers will be concatenated to the server as Strings, especially clear when we try adding two numbers together. ```4+5``` remainds ```4+5``` instead of becoming ```9``` because it is converted into a String!
+
+# Part 2: Bugs
+
+
+
+# Part 3: What I learned!
+
+  I have learned a great deal in the past two weeks. Something I found especially interesting was how easy it is to create a local server. I have had some practice in using localhost servers, but it all seemed more complicated somehow when I was doing it back then. I now have the code to easily create a server with a specific port number. Also, I have enjoyed learning the various definitions of bugs and symptoms, and the difference in definitions between the student and professional ideals of a working program. 
