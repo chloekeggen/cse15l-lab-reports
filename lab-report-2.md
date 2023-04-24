@@ -58,7 +58,15 @@ Today, we will be showing you my String Server and a few lessons about bugs and 
 ## 4. The fix
 
 Before: 
-
+```
+ static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
 
 After: 
 ```
@@ -71,6 +79,9 @@ After:
     return arr;
   }
  ```
+What did we change? In our code before, we created a newArray with the length of our current array. With our for loop, all we were doing was emptying out our current array by basically copying over our empty array into it. So, for example, if we start at the beginning and our array length is 5: ```arr[0] = newArray[4]```, but our newArray is empty, so this just erases our array! 
+
+In order to fix this, we copy the contents of our array into the newArray but backwards, so ```newArray[0] = arr[4]``` and onwards, ```newArray[1] = arr[3]``` until the entire list is reversed. It then makes our array equal the new array again, and returns it! 
 
 # Part 3: What I learned!
 
