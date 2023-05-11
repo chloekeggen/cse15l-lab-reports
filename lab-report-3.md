@@ -1,8 +1,9 @@
 GREP COMMAND
 
-# GREP -R 
+1. # GREP -R 
 
 INPUT : `$ grep -r .txt technical/biomed`
+
 OUTPUT : `technical/biomed/1471-2105-2-1.txt:          Also attached are a users' manual (user.txt - see
 technical/biomed/1471-2105-2-9.txt:            of files (e.g., seq or txt files) or from a
 technical/biomed/1471-2105-2-9.txt:            fasta_groups.txt output file contains the group name
@@ -63,6 +64,7 @@ technical/biomed/gb-2002-3-6-software0001.txt:        as .txt files (tab-delimit
 technical/biomed/gb-2003-4-5-r34.txt:            20,000), and repeat the process. The Readme.txt file`
 
 INPUT: `$ grep -r Background technical/biomed`
+
 OUTPUT: `technical/biomed/1468-6708-3-7.txt:        Background
 technical/biomed/1471-2091-2-10.txt:        Background
 technical/biomed/1471-2091-2-12.txt:        Background
@@ -795,12 +797,14 @@ technical/biomed/gb-2003-4-9-r57.txt:        Background
 technical/biomed/gb-2003-4-9-r58.txt:        Background
 `
 
-# AWK 
+2. # AWK 
 
 INPUT : `$ awk /Background/ technical/biomed/1468-6708-3-7.txt`
+
 OUTPUT : `Background`
 
 INPUT : `$ grep ALLHAT technical/biomed/*.txt`
+
 OUTPUT : `technical/biomed/1468-6708-3-10.txt:        Prevent Heart Attack Trial (ALLHAT) is a randomized,
 technical/biomed/1468-6708-3-10.txt:          The rationale and design of ALLHAT are described in
 technical/biomed/1468-6708-3-10.txt:          1. Did HF cases meet ALLHAT diagnostic criteria?
@@ -837,4 +841,86 @@ technical/biomed/1468-6708-3-7.txt:        Those treated with doxazosin in ALLHA
 technical/biomed/1468-6708-3-7.txt:        increasing the incidence of CHF in the ALLHAT trial, it
 technical/biomed/1468-6708-3-7.txt:        failure findings in ALLHAT, the results support the current`
 
+
+3. # PERL
+
+INPUT : `$ perl -ne 'print if /Background/' technical/biomed/1468-6708-3-7.txt`
+
+OUTPUT : ` Background`
+
+INPUT : `$  perl -ne 'print if /ALLHAT/' technical/biomed/*.txt`
+
+OUTPUT : ` Prevent Heart Attack Trial (ALLHAT) is a randomized,
+          The rationale and design of ALLHAT are described in
+          1. Did HF cases meet ALLHAT diagnostic criteria?
+          were reviewed at the ALLHAT Clinical Trials Center (CTC)
+          ALLHAT Endpoints Subcommittee; for these cases additional
+          The ALLHAT definition of HF, used previously in the
+        created a dilemma for ALLHAT. Since the trial was not
+        ALLHAT criteria for HF were equivalently met in the two
+        HF reports reviewed by the ALLHAT Endpoints Subcommittee
+        reported in the ALLHAT events that were reviewed, the
+        smaller and difficult to detect even in a trial of ALLHAT's
+        as ALLHAT has potential limitations. Built into a structure
+        number of endpoints, resources available to ALLHAT
+        according to ALLHAT criteria. Some discharge summaries and
+        documentation for 2% of ALLHAT event reports.
+        developed for ALLHAT, specifically for HF events. This
+        2) The ALLHAT Manual of Operations provides for
+        3) The ALLHAT follow-up form allows for reporting of
+        (ALLHAT), the role of peripheral alpha-1 antagonists in the
+        doxazosin arm of ALLHAT was stopped early, due to a
+        cause CHF. Because ALLHAT is an active-control trial, no
+        tolerability. In light of the results of ALLHAT, we
+          alpha-1 antagonists. Among these, only ALLHAT
+          ALLHAT demonstrated a highly statistically
+          (RR 1.19, 95% CI 1.01-1.40). Since ALLHAT is a
+          comparison, the rates of CHF in ALLHAT participants
+          chlorthalidone has a similar risk reduction in the ALLHAT
+        The report of the doxazosin arm termination in ALLHAT
+        the ALLHAT trial were unexpected, given the potential
+        Those treated with doxazosin in ALLHAT had a mean blood
+        increasing the incidence of CHF in the ALLHAT trial, it
+        failure findings in ALLHAT, the results support the current`
+        
+4. # SED
+
+INPUT: `$ sed -n '/ALLHAT/p' technical/biomed/*.txt`
+
+OUTPUT: ` Prevent Heart Attack Trial (ALLHAT) is a randomized,
+          The rationale and design of ALLHAT are described in
+          1. Did HF cases meet ALLHAT diagnostic criteria?
+          were reviewed at the ALLHAT Clinical Trials Center (CTC)
+          ALLHAT Endpoints Subcommittee; for these cases additional
+          The ALLHAT definition of HF, used previously in the
+        created a dilemma for ALLHAT. Since the trial was not
+        ALLHAT criteria for HF were equivalently met in the two
+        HF reports reviewed by the ALLHAT Endpoints Subcommittee
+        reported in the ALLHAT events that were reviewed, the
+        smaller and difficult to detect even in a trial of ALLHAT's
+        as ALLHAT has potential limitations. Built into a structure
+        number of endpoints, resources available to ALLHAT
+        according to ALLHAT criteria. Some discharge summaries and
+        documentation for 2% of ALLHAT event reports.
+        developed for ALLHAT, specifically for HF events. This
+        2) The ALLHAT Manual of Operations provides for
+        3) The ALLHAT follow-up form allows for reporting of
+        (ALLHAT), the role of peripheral alpha-1 antagonists in the
+        doxazosin arm of ALLHAT was stopped early, due to a
+        cause CHF. Because ALLHAT is an active-control trial, no
+        tolerability. In light of the results of ALLHAT, we
+          alpha-1 antagonists. Among these, only ALLHAT
+          ALLHAT demonstrated a highly statistically
+          (RR 1.19, 95% CI 1.01-1.40). Since ALLHAT is a
+          comparison, the rates of CHF in ALLHAT participants
+          chlorthalidone has a similar risk reduction in the ALLHAT
+        The report of the doxazosin arm termination in ALLHAT
+        the ALLHAT trial were unexpected, given the potential
+        Those treated with doxazosin in ALLHAT had a mean blood
+        increasing the incidence of CHF in the ALLHAT trial, it
+        failure findings in ALLHAT, the results support the current`
+        
+INPUT: `$   perl -ne 'print if /the role of peripheral alpha-1/p' technical/biomed/*.txt`
+
+OUTPUT : ` (ALLHAT), the role of peripheral alpha-1 antagonists in the`
 
