@@ -1,6 +1,6 @@
 GREP COMMAND
 
-# 1. GREP -R 
+# 1. GREP -R - Grep -r is used to search for a pattern in all files within a directory. For example, if we have a large database with many directories, instead of going through each subdirectory separately, we can grep -r to run through the whole thing. 
 
 INPUT : `$ grep -r .txt technical/biomed`
 
@@ -797,7 +797,7 @@ technical/biomed/gb-2003-4-9-r57.txt:        Background
 technical/biomed/gb-2003-4-9-r58.txt:        Background
 `
 
-# 2. AWK 
+# 2. AWK - awk is very similar to grep but used for more complex text extraction
 
 INPUT : `$ awk /Background/ technical/biomed/1468-6708-3-7.txt`
 
@@ -842,7 +842,7 @@ technical/biomed/1468-6708-3-7.txt:        increasing the incidence of CHF in th
 technical/biomed/1468-6708-3-7.txt:        failure findings in ALLHAT, the results support the current`
 
 
-# 3. PERL
+# 3. PERL - used in complex text processing, works very similarly to the rest but a little more difficult to write as a command. 
 
 INPUT : `$ perl -ne 'print if /Background/' technical/biomed/1468-6708-3-7.txt`
 
@@ -883,7 +883,7 @@ OUTPUT : ` Prevent Heart Attack Trial (ALLHAT) is a randomized,
         increasing the incidence of CHF in the ALLHAT trial, it
         failure findings in ALLHAT, the results support the current`
         
-# 4. SED
+# 4. SED - short for stream editor and can substitute text with new text, quick transformations of text
 
 INPUT: `$ sed -n '/ALLHAT/p' technical/biomed/*.txt`
 
