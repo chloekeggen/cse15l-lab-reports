@@ -1,6 +1,6 @@
 GREP COMMAND
 
-1. # GREP -R 
+# 1. GREP -R 
 
 INPUT : `$ grep -r .txt technical/biomed`
 
@@ -797,7 +797,7 @@ technical/biomed/gb-2003-4-9-r57.txt:        Background
 technical/biomed/gb-2003-4-9-r58.txt:        Background
 `
 
-2. # AWK 
+# 2. AWK 
 
 INPUT : `$ awk /Background/ technical/biomed/1468-6708-3-7.txt`
 
@@ -842,7 +842,7 @@ technical/biomed/1468-6708-3-7.txt:        increasing the incidence of CHF in th
 technical/biomed/1468-6708-3-7.txt:        failure findings in ALLHAT, the results support the current`
 
 
-3. # PERL
+# 3. PERL
 
 INPUT : `$ perl -ne 'print if /Background/' technical/biomed/1468-6708-3-7.txt`
 
@@ -883,7 +883,7 @@ OUTPUT : ` Prevent Heart Attack Trial (ALLHAT) is a randomized,
         increasing the incidence of CHF in the ALLHAT trial, it
         failure findings in ALLHAT, the results support the current`
         
-4. # SED
+# 4. SED
 
 INPUT: `$ sed -n '/ALLHAT/p' technical/biomed/*.txt`
 
@@ -924,3 +924,17 @@ INPUT: `$   perl -ne 'print if /the role of peripheral alpha-1/p' technical/biom
 
 OUTPUT : ` (ALLHAT), the role of peripheral alpha-1 antagonists in the`
 
+# How I found these commands: I used ChatGPT to find these commands; here are the prompts I gave it and its responses:
+
+`what are 4 other commands equivalent to grep that i can use in bash?`
+`In Bash, there are several commands you can use as alternatives to `grep` for searching and filtering text. Here are four commonly used commands:
+
+1. **sed**: Sed (stream editor) is a powerful command-line tool for text manipulation. While its primary purpose is not searching, it can be used with regular expressions to perform pattern matching and filtering. Example: `sed -n '/pattern/p' file.txt`.
+
+2. **awk**: Awk is a versatile programming language designed for text processing. It can handle complex text manipulation tasks and provides pattern matching capabilities. Example: `awk '/pattern/' file.txt`.
+
+3. **perl**: Perl is a robust scripting language that excels at text processing and pattern matching. It has built-in regular expression support and provides powerful text manipulation capabilities. Example: `perl -ne 'print if /pattern/' file.txt`.
+
+4. **rgrep**: Rgrep (recursive grep) is another variant of `grep` that supports recursive searching in directories. It is not available by default in all systems, but if installed, it can be used similarly to `grep`. Example: `rgrep "pattern" directory`.
+
+Remember to replace "pattern" with the search pattern you want to use, and "file.txt" or "directory" with the appropriate file or directory name.` 
