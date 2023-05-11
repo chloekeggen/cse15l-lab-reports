@@ -2,7 +2,7 @@ GREP COMMAND
 
 # 1. GREP -R 
 
-##Grep -r is used to search for a pattern in all files within a directory. For example, if we have a large database with many directories, instead of going through each subdirectory separately, we can grep -r to run through the whole thing. 
+## Grep -r is used to search for a pattern in all files within a directory. For example, if we have a large database with many directories, instead of going through each subdirectory separately, we can grep -r to run through the whole thing. 
 
 INPUT : `$ grep -r .txt technical/biomed`
 
