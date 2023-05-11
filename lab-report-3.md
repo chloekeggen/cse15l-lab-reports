@@ -933,7 +933,8 @@ OUTPUT : ` (ALLHAT), the role of peripheral alpha-1 antagonists in the`
 
 # How I found these commands: I used ChatGPT to find these commands; here are the prompts I gave it and its responses:
 
-`what are 4 other commands equivalent to grep that i can use in bash?`
+## `what are 4 other commands equivalent to grep that i can use in bash?`
+
 `In Bash, there are several commands you can use as alternatives to `grep` for searching and filtering text. Here are four commonly used commands:
 
 1. **sed**: Sed (stream editor) is a powerful command-line tool for text manipulation. While its primary purpose is not searching, it can be used with regular expressions to perform pattern matching and filtering. Example: `sed -n '/pattern/p' file.txt`.
