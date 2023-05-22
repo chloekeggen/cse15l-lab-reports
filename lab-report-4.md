@@ -8,10 +8,12 @@ We are allowed to log in directly to ieng6 through our SSH key that we generated
 `<cd lab7><enter>`
 
 2. Run the tests
+
 ![Image](runtest.PNG)
 `<bash test.sh><enter>`
 
 3. Edit the code
+
 ![Image](vim command.PNG)
 ![Image](vim.PNG)
 Change the `index1` to an `index2`
