@@ -1,5 +1,6 @@
 # LAB REPORT 4
 1. Log in and clone
+
 `<ssh cs15l23pr@ieng6.ucsd.edu> <enter>`
 We are allowed to log in directly to ieng6 through our SSH key that we generated!
 ![Image](gitclone1.PNG)
@@ -20,10 +21,12 @@ Change the `index1` to an `index2`
 ![Image](fixed.PNG)
 
 4. Run tests again
+
 `<bash test.sh><enter>`
 ![Image](testsok.PNG)
 
 5. git commit and push
+
 `<bash add ListExamples.java>`
 `<bash commit>` 
 ![Image](addcommit.PNG)
