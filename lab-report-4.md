@@ -1,5 +1,6 @@
 # LAB REPORT 4
-1. Log in and clone
+
+### Log in and clone
 
 `<ssh cs15l23pr@ieng6.ucsd.edu> <enter>`
 We are allowed to log in directly to ieng6 through our SSH key that we generated!
@@ -7,7 +8,7 @@ We are allowed to log in directly to ieng6 through our SSH key that we generated
 `<git clone https://github.com/chloekeggen/lab7.git><enter>`
 `<cd lab7><enter>`
 
-2. Run the tests
+### Run the tests
 
 ![Image](runtest.PNG)
 `<bash test.sh><enter>`
