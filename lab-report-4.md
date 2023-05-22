@@ -14,7 +14,9 @@ We are allowed to log in directly to ieng6 through our SSH key that we generated
 
 3. Edit the code
 
+
 ![Image](vimcom.PNG)
+
 ![Image](vim.PNG)
 Change the `index1` to an `index2`
 
