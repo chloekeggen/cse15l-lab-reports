@@ -15,7 +15,8 @@ We are allowed to log in directly to ieng6 through our SSH key that we generated
 ![Image](vim.PNG)
 Change the `index1` to an `index2`
 
-`</index1 +><enter><n><n><e><s><2><escape><:wq>`
+## `</index1 +><enter><n><n><e><s><2><escape><:wq>`
+
 ![Image](fixed.PNG)
 
 4. Run tests again
