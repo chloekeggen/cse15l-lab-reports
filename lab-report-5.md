@@ -16,4 +16,6 @@ Reviewed Code
 
 # Part Two
 
+![Image](PolitzChatGPT.PNG)
+
 This is mostly to be silly, but one of the cool things I learned about was CHATGPT and AI! Being encouraged to use it during another lab report was interesting for me because it truly was helpful and efficient in giving me information! I like asking it to teach my about things, but I have noticed it is not 100% correct, but it is still a good tool. I also enjoyed the VIM tutorial during lab. I like that the tutorial is kind of built into the system!
