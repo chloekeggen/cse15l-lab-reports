@@ -1,15 +1,13 @@
 ## Lab Report 5 
-
-EdStem Post
-
 ![Image](Lab5Edstem.PNG)
 
-TA Response
+# TA Response
 
 `Hey Chloe! You may have some syntax errors in your code that causes these errors! If you look at line 12, is the spacing up to the bash guidelines? You may be missing a space or have an extra space.
 As for the for loop, everything looks good, but bash uses {} instead of []. If you change that, it should work properly. Hope this helps!`
 
-Reviewed Code
+
+# Reviewed Code
 
 ![Image](ReviewedCodeLab5.PNG)
 
