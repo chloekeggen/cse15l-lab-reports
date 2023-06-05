@@ -1,5 +1,8 @@
 ## Lab Report 5 
-![Image](Lab5Edstem.PNG)
+
+![Image](P1.PNG)
+
+![Image](P2.PNG)
 
 # TA Response
 
